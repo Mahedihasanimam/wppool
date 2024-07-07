@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { IoMdShare } from "react-icons/io";
@@ -10,35 +10,35 @@ const Navbar = () => {
 
   const navitem = (
     <>
-      <li className="my-2">
-        <NavLink to="/">The WPPOOL Index</NavLink>
+      <li >
+        <Link  >The WPPOOL Index</Link>
       </li>
-      <li className="my-2">
-        <NavLink to="/">All Companies</NavLink>
+      <li >
+        <Link >All Companies</Link>
       </li>
-      <li className="my-2">
-        <NavLink to="/">Potential Future Listings</NavLink>
+      <li >
+        <Link >Potential Future Listings</Link>
       </li>
-      <li className="my-2">
-        <NavLink to="/">State of USA</NavLink>
+      <li >
+        <Link >State of USA</Link>
       </li>
-      <li className="my-2">
-        <NavLink to="/">Stories & Ideas</NavLink>
+      <li >
+        <Link >Stories & Ideas</Link>
       </li>
-      <li className="my-2">
-        <NavLink to="/">About WPPOOL</NavLink>
+      <li >
+        <Link >About WPPOOL</Link>
       </li>
-      <li className="my-2">
-        <NavLink to="/">WPPOOL Portfolio Companies</NavLink>
+      <li >
+        <Link >WPPOOL Portfolio Companies</Link>
       </li>
-      <li className="my-2">
-        <NavLink to="/">Visit WPPOOL</NavLink>
+      <li >
+        <Link className="text-blue-400 text-xl" >Visit WPPOOL</Link>
       </li>
     </>
   );
 
   return (
-    <div className="bg-[#2042B6] text-white fixed w-full z-10 px-4">
+    <div className="bg-[#2042B6] text-white fixed top-0 w-full z-10 px-4">
       <div className="navbar container mx-auto flex justify-between items-center">
         <div className="navbar-start">
           <Link className="btn btn-ghost">
@@ -66,11 +66,14 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="bg-white text-black rounded-lg z-10 mt-3 w-80 p-4 shadow-lg absolute -top-4 right-4">
-          <div className="flex justify-between items-center mb-4">
-            <button className="border-2 p-2 border-r-slate-50 rounded-full bg-green-200 hover:bg-green-300 text-white">
-              <IoMdShare size={27} className="text-green-700" />
+        <div className="bg-white text-black rounded-lg z-10 mt-3 w-80 p-4 shadow-lg absolute -top-4 right-0">
+          <div className="flex  justify-between items-center mb-4">
+            <button className="border-2 p-2 border-r-slate-50 rounded-full bg-[#AFCD80] hover:bg-[#AFCD80] text-white">
+              <IoMdShare size={27} className="text-white" />
             </button>
+          <button className="btn bg-[#2042B6] hover:bg-[#2042B6] text-white  w-fit rounded-full">
+            Download the 2024 Report
+          </button>
             <button
               onClick={() => setIsMenuOpen(false)}
               className="text-black"
@@ -78,10 +81,7 @@ const Navbar = () => {
               <RxCross2 size={27} />
             </button>
           </div>
-          <button className="btn bg-blue-500 text-white mb-4 w-full rounded-full">
-            Download the 2024 Report
-          </button>
-          <ul className="menu flex flex-col items-start">
+          <ul className="menu flex flex-col items-start spacey-1 font-semibold">
             {navitem}
           </ul>
         </div>
