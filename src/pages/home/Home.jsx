@@ -6,6 +6,7 @@ import TopCards from "./chart/TopCards";
 import CompaniesTable from "./allcompany/CompaniesTable";
 import PotentialListings from "./listings/PotentialListings ";
 import SliderSection from "./slidersection/SliderSection";
+import StoriesSection from "./articals/StoriesSection";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <CompaniesTable/>
       <PotentialListings/>
       <SliderSection/>
+      <StoriesSection/>
     </div>
   );
 };
