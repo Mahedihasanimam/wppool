@@ -51,8 +51,8 @@ const CompaniesTable = () => {
           ))}
         </tbody>
       </table>
-      <div className="flex justify-center mt-4">
-        <button className="btn bg-[#2042B6] hover:bg-[#2042B6] shadow-md rounded-full text-white border-none mr-2">Download 'All Companies' Data</button>
+      <div className="lg:flex md:flex  justify-center mt-4">
+        <button className="btn mb-4 bg-[#2042B6] hover:bg-[#2042B6] shadow-md rounded-full text-white border-none mr-2">Download 'All Companies' Data</button>
         <button className="btn bg-[#2042B6] hover:bg-[#2042B6] shadow-md rounded-full text-white border-none ">View Methodology</button>
       </div>
     </div>

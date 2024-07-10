@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className="w-64 bg-[#EFF3F6] text-black     px-4 py-2 hidden lg:block">
+    <div className="w-64 bg-[#EFF3F6] text-black     px-4 m-2 hidden lg:block">
       <button className="text-md w-full font-bold mb-12 btn bg-[#2042B6] hover:bg-[#2042B6] text-white ">The Index</button>
       <ul className='space-y-8'>
 <li className="mb-2 flex justify-between"><Link className="text-gray-500">The Index Tab One</Link><Link>+</Link></li>

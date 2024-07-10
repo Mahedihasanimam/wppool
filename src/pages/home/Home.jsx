@@ -5,12 +5,13 @@ import Sidebar from "./chart/Sidebar";
 import TopCards from "./chart/TopCards";
 import CompaniesTable from "./allcompany/CompaniesTable";
 import PotentialListings from "./listings/PotentialListings ";
+import SliderSection from "./slidersection/SliderSection";
 
 const Home = () => {
   return (
     <div className="mt-16">
       <Hero />
-      <div className="flex container mx-auto flex-col lg:flex-row h-fit px-2 my-4">
+      <div className="flex container mx-auto flex-col lg:flex-row h-fit px-2 my-4 bg-white">
         <Sidebar />
         <div className="flex flex-col flex-grow p-4">
           <header className="App-header text-black py-4 mb-4">
@@ -24,6 +25,7 @@ const Home = () => {
       </div>
       <CompaniesTable/>
       <PotentialListings/>
+      <SliderSection/>
     </div>
   );
 };
