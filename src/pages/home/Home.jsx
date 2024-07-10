@@ -3,6 +3,7 @@ import Hero from "./hero/Hero";
 import ChartComponent from "./chart/ChartComponent";
 import Sidebar from "./chart/Sidebar";
 import TopCards from "./chart/TopCards";
+import CompaniesTable from "./allcompany/CompaniesTable";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
           </main>
         </div>
       </div>
+      <CompaniesTable/>
     </div>
   );
 };

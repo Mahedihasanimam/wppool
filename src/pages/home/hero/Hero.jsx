@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <button className="btn bg-white text-black rounded-full px-2.5 hover:bg-white absolute bottom-0 right-10">
+      <button className="btn bg-white text-black rounded-full px-2.5 hover:bg-white absolute bottom-20 right-10">
       <GoArrowDown size={27}/>
       </button>
     </div>
