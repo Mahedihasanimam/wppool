@@ -4,6 +4,7 @@ import ChartComponent from "./chart/ChartComponent";
 import Sidebar from "./chart/Sidebar";
 import TopCards from "./chart/TopCards";
 import CompaniesTable from "./allcompany/CompaniesTable";
+import PotentialListings from "./listings/PotentialListings ";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         </div>
       </div>
       <CompaniesTable/>
+      <PotentialListings/>
     </div>
   );
 };
